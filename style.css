@@ -1,3 +1,6 @@
+.wrapper {
+  transform: translate(35%, 35%);
+}
 .dial {
   height: 400px;
   width: 400px;
@@ -13,8 +16,8 @@
 }
 
 body {
-  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans",
+    "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .timer input {
@@ -26,7 +29,7 @@ body {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  background-color: rgba(35, 173, 278, .1);
+  background-color: rgba(35, 173, 278, 0.1);
 }
 
 .timer button {
@@ -58,7 +61,7 @@ body {
 .timer input:hover,
 .timer input:focus,
 .timer input:active {
-  background-color: rgba(35, 173, 278, .3);
+  background-color: rgba(35, 173, 278, 0.3);
   margin-bottom: 10px;
   outline: none;
   width: 180px;

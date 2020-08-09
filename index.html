@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <link rel="stylesheet" href="style.css" />
-
-</head>
-
-<body>
-  <div class="timer">
-    <div class="controls">
-      <input id="duration" value="30" oninput="t1.userInput()" />
-      <div class="button">
-        <button id="start"><img src="Buttons/start.svg" width="36"></button>
-        <button id="pause"><img src="Buttons/pause.svg" width="36"></button>
-        <button id="resume"><img src="Buttons/resume.svg" width="36"></button>
-        <button id="reset"><img src="Buttons/reset.svg" width="36"></button>
+  <body>
+    <div class="wrapper">
+      <div class="timer">
+        <div class="controls">
+          <input id="duration" value="30" oninput="t1.userInput()" />
+          <div class="button">
+            <button id="start">
+              <img src="Buttons/start.svg" width="36" />
+            </button>
+            <button id="pause">
+              <img src="Buttons/pause.svg" width="36" />
+            </button>
+            <button id="resume">
+              <img src="Buttons/resume.svg" width="36" />
+            </button>
+            <button id="reset">
+              <img src="Buttons/reset.svg" width="36" />
+            </button>
+          </div>
+        </div>
+        <svg class="dial">
+          <circle
+            fill="transparent"
+            stroke="rgba(220, 20, 60, 0.9)"
+            stroke-width="15"
+            r="190"
+            cx="0"
+            cy="200"
+            transform="rotate(-90 100 100)"
+          />
+        </svg>
       </div>
     </div>
-    <svg class="dial">
-      <circle fill="transparent" stroke="rgba(220, 20, 60, 0.9)" stroke-width="15" r="190" cx="0" cy="200"
-        transform="rotate(-90 100 100)" />
-    </svg>
-  </div>
-  <script src="app.js"></script>
-</body>
-
+    <script src="app.js"></script>
+  </body>
 </html>
